@@ -1,0 +1,21 @@
+
+#contenedor figure{
+	margin:0px;
+	padding: 0px;
+	
+}
+#contenedor figure img{
+	border-bottom: 30px solid #106FB5;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+#contenedor span{
+	position: absolute;
+	top:25em;
+	left:6em;
+	color: white;
+	font-family: optima;
+	text-shadow:2px 2px 20px white;
+}

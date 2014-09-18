@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-ch869z');
+	src:url('../fonts/icomoon.eot?#iefix-ch869z') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-ch869z') format('woff'),
+		url('../fonts/icomoon.ttf?-ch869z') format('truetype'),
+		url('../fonts/icomoon.svg?-ch869z#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-profile:before {
+	content: "\e603";
+}
+.icon-phone:before {
+	content: "\e600";
+}
+.icon-lock:before {
+	content: "\e601";
+}
+.icon-mail:before {
+	content: "\e602";
+}
+
+
+footer div span .icon-phone{
+	color:#106FB5;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+footer div span .icon-lock{
+	color:#106FB5;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+footer div span .icon-mail{
+	color:#106FB5;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+footer div span .icon-phone:hover{
+	color:#023E84;
+	text-shadow:2px 2px 5px lightgray;
+}
+
+footer div span .icon-lock:hover{
+	color:#023E84;
+	text-shadow:2px 2px 5px lightgray;
+}
+
+footer div span .icon-mail:hover{
+	color:#023E84;
+	text-shadow:2px 2px 5px lightgray;
+}
+
+footer div span a:hover{
+	border:3px solid #023E84;
+	box-shadow:2px 2px 10px lightgray;
+}

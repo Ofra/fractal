@@ -1,0 +1,80 @@
+
+#contacto0{
+	border-bottom: 25px solid #0069B4;
+}
+#contacto{
+	display: inline-block;
+	/*border-right: 1px dashed black;*/
+	padding: 0.5em 3em; 
+	width: 28%;
+	padding-bottom: 4em;
+	
+}
+
+#contacto h1{
+	color: #0069B4;
+	font-family: helveltica;
+	font-size: 2.6em;
+	margin-left: -25px;
+}
+
+#contacto form input{
+	width: 100%;
+}
+
+#contacto form #sub_contacto{
+	width: 21%;
+}
+
+#contacto form textarea{
+	width: 100%;
+	height: 70px;
+}
+
+#contacto1{
+	margin-top: 70px;
+	border-left: 1px dashed black;
+	width: 38%;
+	padding-left: 30px;
+	padding-bottom: 3em;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+#contacto1 aside {
+	margin-top: 1.5em;
+}
+#contacto1 aside .icon-mail{
+	color:#0069B4;
+	font-size: 2em;
+	
+}
+#contacto1 aside .icon-phone{
+	color:#0069B4;
+	font-size: 2em;
+}
+
+#contacto1 aside a{
+	margin-right: 0.3em;
+	padding: 0.2em;
+	border:2.8px solid #0069B4;
+	border-radius: 50%;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+#contacto1 h2{
+	padding-bottom: 1em;
+	padding-top: 0.3em;
+	color:#0069B4;
+	font-family: optima;
+}
+
+#contacto label{
+	color:black;
+}
+
+#contacto1 label{
+	color: black;
+}

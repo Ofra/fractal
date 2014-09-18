@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Myriad Pro Semibold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Semibold Italic'), url('../fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+}
+body{
+	font-family: Arial;
+}
+
+header figure{
+	margin: 0px;
+	padding: 0px;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-radial-gradient(center bottom, circle farthest-corner, #FFFFFF 0%, #C5C9C9 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center bottom, circle farthest-corner, #FFFFFF 0%, #C5C9C9 100%);
+	/* Opera */ 
+	background-image: -o-radial-gradient(center bottom, circle farthest-corner, #FFFFFF 0%, #C5C9C9 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center bottom, 0, center bottom, 560, color-stop(0, #FFFFFF), color-stop(1, #C5C9C9));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center bottom, circle farthest-corner, #FFFFFF 0%, #C5C9C9 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: radial-gradient(circle farthest-corner at center bottom, #FFFFFF 0%, #C5C9C9 100%);
+	height: 200px;
+}
+
+header figure img{
+	/*height:119px;*/
+	margin-top: 36px;
+	margin-left: 20px;
+	/*width:350px;*/
+	width: 350px;
+}
+
+header #lista1{
+	margin: 0px;
+	padding: 0px;
+	background-color: #106FB5;
+	list-style-type: none;
+	width:100%;
+}
+
+header #lista1 li:first-child{
+	padding-left: 2em;
+}
+
+header #lista1 li{
+	margin:0px;
+	display: inline-block;
+	padding: 15px 0px;
+	margin-left:-2px;
+	/*padding-left:10px;*/
+}
+
+header #lista1 li a{
+	margin:0px;
+	color:white;
+	border-right: 1px solid white;
+	font-family: Myriad Pro Regular;
+	padding:0px 10px;
+	text-decoration: none;
+}
+
+header #lista1 li a:hover, header #lista1 li:hover{
+	background-color: #023E84;
+
+}
+
+
+#main{
+	background-color: white;
+	margin:auto;
+	padding: 0px;
+	position: relative;
+	width: 80%;
+}
+
+#nav_primario ul{
+	background-color: #023E84;
+	position: absolute;
+	right:0px;
+	width: 55%;
+	top:4em;
+	list-style-type: none;
+	border-left: 10px solid #0F70B7;
+	padding: 0px;
+
+}
+
+#nav_primario ul li{
+	display: inline-block;
+	padding: 10px 20px;	
+}
+
+
+#nav_primario ul li a{
+	color:white;
+	font-size: 1.3em;
+	font-family: helveltica;
+	border: 0px solid white;
+	text-decoration: none;
+		
+}
+
+#nav_primario ul li a:hover, #nav_primario ul li:hover{
+	background-color: #106FB5;
+}
+
+#lista1 .nav_main_li_1 a{
+	border: 0px solid white;
+}
+
+#barrita{
+	position: absolute;
+	background-color: #106FB5;
+	height: 45px;
+	width: 10px;
+	top:80px;
+	left: 450px;
+}
