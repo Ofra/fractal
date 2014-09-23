@@ -4,7 +4,7 @@
 	<section id="contacto0">
 		<div id="contacto">
 			<h1>Contáctenos</h1>
-			<form name="contact1" id="contact1" method="post" action="php/contact.php">
+			<form name="contact1" id="contact1" method="post" action="php/mailSend.php">
 				<label for="">Nombre: *</label> <br />
 				<input name="nombre" id="nombre" type="text" required/><br /><br />
 				<label for="">Dirección de correo electrónico: *</label> <br />
