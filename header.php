@@ -33,12 +33,12 @@
 					</nav>
 					<nav id="nav_main">
 						<ul id="lista1">
-							<li class="nav_main_li"><a href="index.php">INICIO</a></li>
-							<li class="nav_main_li"><a href="nosotros.php">NOSOTROS</a></li>
-							<li class="nav_main_li"><a href="servicios.php">NUESTROS SERVICIOS</a></li>
+							<li class="nav_main_li"><a href="Inicio">INICIO</a></li>
+							<li class="nav_main_li"><a href="Nosotros">NOSOTROS</a></li>
+							<li class="nav_main_li"><a href="Servicios">NUESTROS SERVICIOS</a></li>
 							<li class="nav_main_li"><a href="">CLIENTES</a></li>
 							<li class="nav_main_li"><a href="">RECURSOS</a></li>
-							<li class="nav_main_li"><a href="contacto.php">CONTACTO</a></li>
+							<li class="nav_main_li"><a href="Contacto">CONTACTO</a></li>
 							<li class="nav_main_li_1"><a href="">AVISO DE PRIVACIDAD</a></li>
 						</ul>
 					</nav>

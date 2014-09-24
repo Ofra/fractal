@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+Rewriterule ^Contacto$ contacto.php
+Rewriterule ^Nosotros$ nosotros.php 
+Rewriterule ^Servicios$ servicios.php 
+Rewriterule ^Inicio$ index.php  	
