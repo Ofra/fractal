@@ -1,0 +1,33 @@
+#table_id img{
+	width: 25px;
+	
+}
+
+.team{
+	overflow-x:scroll;
+}
+
+#table_id th{
+	font-size: 13px;
+	text-align: center;
+}
+
+#table_id th a{
+	font-size: 18px;
+	text-align: center;
+}
+
+
+#table_id th .icon-times{
+	color:red;
+}
+
+#table_id th .icon-times:hover{
+	color:#990000;
+}
+
+#head-team .icon-plus-alt{
+	float:right;
+	font-size: 1.5em;
+	color:#32434D;
+}

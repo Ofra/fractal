@@ -1,0 +1,61 @@
+#headhun-img{
+	height: 200px;
+	background-color: gray;
+}
+
+#headhunting-contain{
+	width: 100%;
+	border-bottom: 20px solid #106FB5;
+
+}
+
+.h_art1{
+	margin:1em 0px;
+	padding: 1em;
+	display: inline-block;
+
+}
+
+
+
+.h_art1:nth-child(1){
+	padding-left: 2em;
+	background-color: ;
+	width: 60%;
+	vertical-align: top;
+	text-align: justify;
+}
+
+.h_art1:nth-child(2){
+	border-left: 1px dashed gray;
+}
+
+#hud-list{
+	color:blue;
+}
+
+#hud-list a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/*coaching*/
+.h_art2{
+	margin:1em 0px;
+	padding: 1em;
+	display: inline-block;
+
+}
+
+.h_art2:nth-child(1){
+	padding-left: 2em;
+	background-color: ;
+	width: 40%;
+	vertical-align: top;
+	text-align: justify;
+}
+
+.h_art2:nth-child(2){
+	border-left: 1px dashed gray;
+}

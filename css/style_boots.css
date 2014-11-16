@@ -1,0 +1,81 @@
+.mio-nav-a{color: white!important;}
+
+.mio-nav{
+	background-color: #206996;
+	color: white;
+	border: 0px;
+	border-radius: 0px;
+	height: auto;
+
+}
+.mio-nav li{
+	border-right: 1px solid #3D81AA;
+}
+.mio-nav ul li:hover{
+	background-color: #285E7F;
+}
+.mio-head-nav{
+	margin-left: 0px;
+	padding:0em 3em; 
+	border-right: 1px solid #3D81AA;
+}
+
+.btn-nav-res{
+	background: white;
+}
+
+.btn-nav-res:hover{
+	background: #ddd;
+}
+
+.mio-head-nav:hover{
+	background-color: #285E7F;
+}
+
+.img-user{
+	vertical-align: top;
+	margin-top: -10px;
+	margin-bottom: -5px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+color: lightgray;
+background-color: #285E7F;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+	font-family: 'Dancing Script', cursive;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	color: lightgray;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li:hover>a {
+	color: white;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li:hover {
+	background-color: #3D81AA;
+}
+
+.nav-menu-res{
+	text-align: center;
+}
+
+@media (min-width: 768px){
+	.nav-menu-res{
+		text-align: left;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li:hover>a {
+		color: black;
+		text-shadow:0px 0px 0px black;
+	}
+	
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		color: gray;
+	}
+}
+

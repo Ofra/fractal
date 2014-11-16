@@ -6,11 +6,11 @@
 	margin:0px;
 	padding:15px;
 	display: inline-block;
-	height: 350px;
+	height: 300px;
 	width: 29%;
 	border-right: 1px dashed gray;
 	vertical-align: top;
-	text-align: justify;
+	text-align: center;
 }
 
 #servicios article:last-child{
@@ -25,15 +25,19 @@
 #service article h2{
 	margin:0px;
 	padding:0px;
+
 }
 
 #servicios article h2 a{
 	font-family: helveltica;
 	text-decoration: none;
-	color:#0068B2;
+	color:#0069B3;
 	
 }
 
+#servicios article h2 a:hover{
+	color:#023E84;
+}
 
 #servicios1{
 	background-color:#E3E3E3;
@@ -51,4 +55,22 @@
 #servicios1 p{
 	text-align: justify;
 	margin: 2em 6em;
+}
+
+#servi-img{
+	height: 400px;
+	background-color: gray;
+}
+#serv-icon{
+	height: 50px;
+	margin-top: 10px;
+	border-top: 1px dashed gray;
+	border-bottom: 1px dashed gray;
+}
+
+#franj{
+	margin-top: 10px;
+	width: 100%;
+	
+	border-bottom: 20px solid #106FB5;
 }

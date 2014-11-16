@@ -1,0 +1,57 @@
+#nos-1{
+	border-bottom: 20px solid #0269B3;
+	width: 100%;
+}
+#nos-1 h2{
+	text-align: center;
+	color: #0269B3;
+}
+
+#noso-parr{
+	text-align: center;
+}
+
+.nos-122{
+	display: inline-block;
+	margin:auto;
+	padding: 1em;
+
+}
+
+.nos-122:nth-child(1){
+	width: 47%;
+
+}
+
+.nos-122:nth-child(2){
+	vertical-align: top;
+	border-left: 1px dashed gray;
+	width: 45%;
+}
+
+.noso-art img{
+	margin-top: 1em;
+	margin-right: 1em;
+}
+
+.noso-art p{
+	text-align: justify;
+}
+
+.art-noso{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.art-noso label{
+	color: #0269B3;
+
+}
+.art-noso:nth-child(1){
+
+}
+
+.art-noso:nth-child(2){
+
+	width: 80%
+}
