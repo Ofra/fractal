@@ -1,3 +1,4 @@
+<?php include "../php/conexion.php";?>
 <div class="title-view">
 	<h1>Users</h1>
 </div>
@@ -13,39 +14,42 @@
 		    <thead>
 		        <tr>
 		            <th>Image</th>
-		            <th>Name</th>
+		            <th>Username</th>
+		            <th>Password</th>
 		            <th>Title</th>
 		            <th>Mail</th>
-		            <th>Phone</th>
-		            <th>Address</th>		
 		            <th>Status</th>
+		            <th>Read more</th>
 		            <th>Update</th>
 		            <th>Delete</th>
 		        </tr>
 		    </thead>
 		    <tbody>
+				<?php
+					$status=0;
+					$result = mysqli_query($con,"SELECT * FROM user");
+					while ($rs = mysqli_fetch_array($result)){
+						if($rs['uImg'] == '0'){
+							$status = 'Disable';
+						}else{
+							$status = 'Enable';
+						}
+
+				?>
 		        <tr>
-		            <th><img src="img/Erendira Nava BN.jpg" alt=""></th>
-		            <th>Oscar</th>
-		            <th>Ingeniero</th>
-		            <th>ofra.2925@gmail.com</th>
-		            <th>311-104-93-07</th>
-		            <th>Huajicori #115 pte col. Morelos</th>		
-		            <th>Activo</th>
-		            <th><a href="#" class="icon-gear"></a></th>
-		            <th><a href="#" class="icon-times"></a></th>
+		            <th><img src="<?php echo $rs['uImg'];?>" alt=""></th>
+		            <th><?php echo $rs['uUser'];?></th>
+		            <th><?php echo $rs['uPassword'];?></th>
+		            <th><?php echo $rs['uTitle'];?></th>
+		            <th><?php echo $rs['uMail'];?></th>
+		            <th><?php echo $status; ?></th>
+		            <th><a href="#/Description?id=<?php echo $rs['uId']; ?>" class="icon-user"></a></th>		
+		            <th><a href="#/Update_user?id=<?php echo $rs['uId']; ?>" class="icon-gear"></a></th>
+		            <th><a href="Delete_user.php?id=<?php echo $rs['uId']; ?>" class="icon-times"></a></th>
 		        </tr>
-		        <tr>
-		            <th><img src="img/Erendira Nava BN.jpg" alt=""></th>
-		            <th>Efrain</th>
-		            <th>Title</th>
-		            <th>Mail</th>
-		            <th>Phone</th>
-		            <th>Address</th>		
-		            <th>Status</th>
-		            <th><a href="#" class="icon-gear"></a></th>
-		            <th><a href="#" class="icon-times"></a></th>
-		        </tr>
+		        <?php
+					}
+				?>
 		    </tbody>
 		</table>
 	</section>

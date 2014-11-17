@@ -1,3 +1,4 @@
+<?php include "../php/conexion.php";?>
 <div class="title-view">
 	<h1>Create a new user</h1>
 </div>
@@ -8,43 +9,47 @@
 			<a class="icon-user gruop-icon"> Add User</a>
 		</div>
 		
-		<form  role="form" class="form-horizontal" action="">
+		<form  role="form" class="form-horizontal" method="post" enctype="multipart/form-data" action="php/insert_user.php">
 			<table>
 				<tr>
-					<td>User name:</td>
-					<td><input type="text" required></td>
+					<td>Username:*</td>
+					<td><input name="username" type="text" required></td>
 				</tr>
 				<tr>
-					<td>Name:</td>
-					<td><input type="text" required></td>
+					<td>First Name:*</td>
+					<td><input name="firstname" type="text" required></td>
 				</tr>
 				<tr>
-					<td>Title:</td>
-					<td><input type="text" required></td>
+					<td>Last name:*</td>
+					<td><input name="lastname" type="text" required></td>
 				</tr>
 				<tr>
-					<td>Phone:</td>
-					<td><input type="text" required></td>
+					<td>Password:*</td>
+					<td><input name="pass"  type="text" required></td>
 				</tr>
 				<tr>
-					<td>Address:</td>
-					<td><input type="text" required></td>
+					<td>Title:*</td>
+					<td><input name="title" type="text" required></td>
 				</tr>
 				<tr>
-					<td>Email:</td>
-					<td><input type="mail" required></td>
+					<td>Phone:*</td>
+					<td><input name="phone" type="text" required></td>
 				</tr>
 				<tr>
-					<td>Image:</td>
-					<td><input id="file-team" type="file" required></td>
+					<td>Address:*</td>
+					<td><input name="address" type="text" required></td>
 				</tr>
 				<tr>
-					<td>Resume</td>
-					<td><input id="file-team" type="file" required></td>
+					<td>Email:*</td>
+					<td><input name="email" type="mail" required></td>
+				</tr>
+				<tr>
+					<td>Image:*</td>
+					<td><input name="image" id="file-team" type="file" required></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td><input id="guardar-team" type="button" required value="Save"></td>
+					<td><input name="save" id="guardar-team" type="submit" required value="Save"></td>
 				</tr>
 			</table>		
 		</form>

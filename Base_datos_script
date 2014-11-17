@@ -1,0 +1,26 @@
+Base de datos:
+
+Name:Fractal_db
+
+Table:user
+uId
+uUser
+uPassword
+uName
+uLastname
+uTitle
+uMail
+uPhone
+uAddress
+uStatus
+uImg
+uHide
+
+Table:team
+tId
+tName
+tTitle
+tPhone
+tEmail
+tImg
+tFile

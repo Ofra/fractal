@@ -1,3 +1,13 @@
+<?php
+	session_start();
+	include('php/conexion.php');
+	if (!isset($_SESSION['id'])){
+		
+		header('Location: Inicio_sesion');
+	}else{ 	
+		//header('Location: Admin');
+	}
+?>
 <html lang="en" ng-app="DashBoard">
 	<head>
 		<meta charset="utf-8">
@@ -46,7 +56,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand mio-nav-a" href="#"> FractalH&T Dashboard </a>
+			      <a class="navbar-brand mio-nav-a" href="Admin"> FractalH&T Dashboard </a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,13 +64,14 @@
 			      <ul class="nav navbar-nav navbar-right oscar">
 			        <li><a href="Inicio" class="icon-home mio-nav-a"> 	Home</a></li>
 			        <li class="dropdown ">
-			          <a class="dropdown-toggle mio-nav-a" data-toggle="dropdown"><img class="img-user" src="img/oscar traje.gif" width="30px" /> Oscar Francisco <span class="caret"></span></a>
+			          <a class="dropdown-toggle mio-nav-a" data-toggle="dropdown"><img class="img-user" src=" <?php echo $_SESSION['image']; ?>" width="30px" height="35px"/> <?php echo $_SESSION['name_user']; ?><span class="caret"></span></a>
 			          <ul class="dropdown-menu nav-menu-res" role="menu">
+			          	<li><a href="#/Admin" >Dashboard</a></li>
 			            <li><a href="#/Users" >Users</a></li>
 			            <li><a href="#/Team" >Work Team</a></li>
-			            <li><a href="#" >About Of</a></li>
+			            <li><a href="#" >About us</a></li>
 			            <li class="divider"></li>
-			            <li><a href="#">Logout</a></li>
+			            <li><a href="php/Cierre_sesion.php">Logout</a></li>
 			          </ul>
 			        </li>
 			      </ul>
@@ -78,10 +89,10 @@
 			<section class="side-bar">
 				<ul id="admin-menu">
 					<li>
-						<a><img class="admin-img" src="img/oscar traje.gif" width="30px;"> Oscar Francisco <label class="icon-chevron-circle-right"for=""></label></a>
+						<a><img class="admin-img" src="<?php echo $_SESSION['image']; ?>" width="30px" height="40px"> <?php echo $_SESSION['name_user']; ?><label class="icon-chevron-circle-right"for=""></label></a>
 					</li>
 					<li>
-						<a href="Backoffice">Dashboard <label class="icon-gear"for=""></label></a>
+						<a href="#/Admin">Dashboard <label class="icon-gear"for=""></label></a>
 					</li>
 					<li>
 						<a href="#/Users">Users<label class="icon-user"for=""></label></a>
@@ -90,7 +101,7 @@
 						<a id="tab-team" href="#/Team">Work Team<label class="icon-group"for=""></label></a>
 					</li>
 					<li>
-						<a href="#">About of: <label class="icon-list"for=""></label></a>
+						<a href="#">About us <label class="icon-list"for=""></label></a>
 					</li>
 				</ul>
 				

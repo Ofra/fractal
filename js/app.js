@@ -2,7 +2,7 @@
 var miApp = angular.module('DashBoard',['ngRoute', 'a']);
 
 miApp.config(['$routeProvider',function($routeProvider){
-	$routeProvider.when('/Backoffice',{
+	$routeProvider.when('/Admin',{
 		templateUrl:'views/back.html'
 	}).
 	when('/Add_team',{
@@ -19,7 +19,13 @@ miApp.config(['$routeProvider',function($routeProvider){
 	when('/Add_users',{
 		templateUrl:'views/add_user.php',
 	}).
+	when('/Update_user',{
+		templateUrl:'views/update_user.php',
+	}).
+	when('/Update_team',{
+		templateUrl:'views/team_update.php',
+	}).
 	otherwise({
-		redirectTo: '/Backoffice'
+		redirectTo: '/Admin'
 	});
 }]); 

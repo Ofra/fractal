@@ -52,24 +52,36 @@
 			</nav>
 			
 		</header>
+		
 		<section class="login">
+			<?php
+				if (isset($_GET['mensaje'])){
+			?>
+			<div class="alert alert-warning fade in block" style="width:300px; margin:auto; margin-bottom:0.5em;">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+				<span class="glyphicon glyphicon-info-sign"></span>  ...Upss, An error has Ocurred, Try Again!
+			</div> 
+
+			<?php
+				}
+			?>
 			<div class="log1">
 				<div class="log-title">
 					<a class="icon-user"></a>
 					<h4>User Login</h4>
 				</div>
 				<div class="log-form">
-					<form action="" class="form-login">
+					<form action="php/User_login.php" method="post" class="form-login">
 						<label for="">User</label><br>
 						<div class="input-group">
 						<span class="input-group-addon"><a class="icon-user"></a></span>
-						  <input type="text" class="form-control">
+						  <input name="user" type="text" class="form-control" required>
 						  
 						</div><br>
 						<label for="">Password</label><br>
 						<div class="input-group">
 						<span class="input-group-addon"><a class="icon-locked"></a></span>
-						  <input type="password" class="form-control" >
+						  <input name="pass" type="password" class="form-control" required>
 						  
 						</div><br>
 						<input type="submit">
